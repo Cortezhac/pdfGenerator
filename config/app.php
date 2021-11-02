@@ -175,7 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         // PDF Generator
-        Barryvdh\DomPDF\ServiceProvider::class
+        Barryvdh\DomPDF\ServiceProvider::class,
+        // EXCEL Export
+        Maatwebsite\Excel\ExcelServiceProvider::class
     ],
 
     /*
@@ -229,7 +231,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'PDFGenerator' => Barryvdh\DomPDF\Facade::class
+        'PDFGenerator' => Barryvdh\DomPDF\Facade::class,
+        'Excel' => \Maatwebsite\Excel\Facades\Excel::class
     ],
 
 ];

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\UsersExport;
 use App\Models\User;
 use Illuminate\Http\Request;
 use PDFGenerator;
+use Excel;
 
 class PDFController extends Controller
 {
@@ -31,7 +33,12 @@ class PDFController extends Controller
         $info = ['info' => $data];
 
         $url = 'generator.template';
-        
+        set_time_limit(0);
         return $this->crearPDF($info,$url);
+    }
+
+    public function exportExcel() 
+    {
+        return Excel::download(new UsersExport, 'users.xlsx');
     }
 }

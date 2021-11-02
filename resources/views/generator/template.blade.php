@@ -43,6 +43,7 @@
                         <th>Id</th>
                         <th>Nombre</th>
                         <th>Email</th>
+                        <th>Entrada</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -51,6 +52,7 @@
                             <td>{{$f->id}}</td>
                             <td>{{$f->name}}</td>
                             <td>{{$f->email}}</td>
+                            <td>{{$f->created_at}}</td>
                         </tr>
                         @endforeach
                 </tbody>

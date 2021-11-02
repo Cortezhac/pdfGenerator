@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PDFController::class, 'index']);
 Route::get('/pdf',[PDFController::class, 'crearInforme']);
 Route::get('/pdf-edit',[PDFController::class, 'viewtempalte']);
+Route::get('/excel-export', [PDFController::class, 'exportExcel']);
