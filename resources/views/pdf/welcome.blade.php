@@ -4,7 +4,7 @@
     <div class="py-4 mx-12">
         <a href="/pdf" class="px-4 py-2 bg-red-500 text-white rounded-md">Generar reporte</a>
     </div>
-    <div class="mt-4 px-12">
+    <div class="mt-4 px-12 text-left">
         <table class="w-full">
             <thead class="bg-gray-400 text-white">
                 <tr>
